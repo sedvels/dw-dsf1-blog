@@ -1,9 +1,13 @@
 * {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans", Arial;
 	text-decoration: none;
+}
+
+input:focus {
+  background: lightgray;
 }
 
 header {
@@ -21,7 +25,6 @@ header #bar > * {
 }
 
 header #bar nav {
-	border-color: white;
 	position: absolute;
 	top: 10px;
 	right: 5px;
@@ -30,10 +33,6 @@ header #bar nav {
 header #bar nav *{
 	color: white;
 	display: inline-block;
-}
-
-header #bar nav ul {
-	//margin-top: 3px;
 }
 
 header #bar nav ul li{
@@ -55,18 +54,159 @@ header #bar nav .button {
 
 .contenedor {
 	color: #5e5e5e;
-	margin: 12px auto;
+	margin: auto;
 	width: 1024px;
 }
 
-header #bar .portada {
-	
+.portada>div {
+	width: 100%;
 }
 
-header .portada .form-buscador {
-	height: 50px;
-	width: 240px;
+.buscar {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	height: 45px;
 }
+
+input#buscar, input.btn-buscar {
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+input#buscar {
+	border-radius: 5px;
+	height: 32px;
+	font-size: 1em;
+	width: 200px;
+}
+
+input.btn-buscar {
+	background: black;
+	background-image: url("../images/platzi-buscar.png");
+	cursor: pointer;
+	height: 34px;
+	width: 34px;
+}
+
+.ultimo-post {
+	height: 600px;
+	overflow: hidden;
+}
+
+.ultimo-post .imagen {
+	height: 100%;
+	width: 100%;
+}
+
+.ultimo-post .imagen img {
+	position: relative;
+	top: -100px;
+}
+
+.frame-titulo {
+	background: rgba(255,255,255,.7);
+	display: inline-block;
+	height: 200px;
+	bottom: 240px;
+	left: 20px;
+	position: relative;
+	width: 500px !important;
+}
+
+.frame-titulo * {
+	display: inline-block;
+}
+
+.frame-titulo>h1 {
+	margin: 20px 15px 10px;
+}
+
+.frame-titulo>hr {
+	margin: 0 15px;
+	width: 460px;
+}
+
+.frame-titulo div {
+	margin: 10px 15px 20px;
+	width: 460px;
+}
+
+.frame-titulo span {
+	font-size: 14px;
+	margin: 0 5px;
+}
+
+.frame-titulo .detalles {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.detalles>span {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.frame-titulo .avatar {
+	border-radius: 20px;
+}
+
+.articulos {
+	align-items: top;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+
+}
+
+.articulo {
+	height: 380px;
+	width: 320px;
+}
+
+.articulo .imagen {
+	height: 210px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.articulo .frame-titulo {
+	background: none;
+	display: inline-block;
+	height: 150px;
+	left: 0;
+	top: 0;
+	width: 100% !important;
+}
+
+.articulo .frame-titulo>* {
+	margin: 0;
+	width: 100%;
+}
+
+.articulo .frame-titulo>h3 {
+	margin-top: 15px;
+	margin-bottom: 8px;
+}
+
+.articulo .frame-titulo>hr {
+
+}
+
+.articulo .frame-titulo>.detalles span{
+	margin: 0;
+}
+
+
+
+
+
 
 
 
