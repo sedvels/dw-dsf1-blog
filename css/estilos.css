@@ -234,30 +234,28 @@ input.btn-buscar {
 	background-color: #e8dfcb;
 	border: 2px solid #cec0a7;
 	font-size: 16px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .salto.primera:before {
-	content: "«";
+	content: "« ";
 	font-size: 18px;
-	margin-right: 3px;
 }
 
 .salto.anterior:before {
-	content: "‹";
+	content: "‹ ";
 	font-size: 18px;
-	margin-right: 3px;
 }
 
 .salto.ultima:after {
-	content: "»";
+	content: " »";
 	font-size: 18px;
-	margin-left: 3px;
 }
 
 .salto.siguiente:after {
-	content: "›";
+	content: " ›";
 	font-size: 18px;
-	margin-left: 3px;
 }
 
 .hidden {
@@ -267,8 +265,10 @@ input.btn-buscar {
 .activa {
 	background: none;
 	border: 2px solid rgba(255,255,255,0);
-	pointer-events: none;
 	cursor: default;
+	margin-left: -8px;
+	margin-right: -8px;
+	pointer-events: none;
 }
 
 
