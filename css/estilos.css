@@ -271,7 +271,11 @@ input.btn-buscar {
 	pointer-events: none;
 }
 
-
+footer {
+	background-size: cover;
+	height: 50px;
+	margin-top: 20px;
+}
 
 
 
